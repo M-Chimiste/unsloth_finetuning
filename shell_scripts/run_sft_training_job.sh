@@ -1,0 +1,1 @@
+python unsloth-sft-finetune.py --base_model="unsloth/Phi-3-mini-4k-instruct-bnb-4bit" --output="weights/phi-3-wizardlm" --data_path="data/wizard_uncensored_2048_phi_3.json" --epochs=1 --seed=42
