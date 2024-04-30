@@ -78,6 +78,9 @@ trainer = ORPOTrainer(
         bf16 = torch.cuda.is_bf16_supported(),
         output_dir = args["output"],
         seed = args["seed"],
+        save_strategy="steps",
+        save_total_limit=3,
+        save_steps=200,
     ),
 )
 
